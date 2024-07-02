@@ -1,0 +1,146 @@
+@charset "utf-8";
+@import url(common.css);
+
+*{
+  box-sizing: border-box;
+}
+/* 회원가입 join.php 서식*/
+.join{
+  width: 100%;
+  padding: 40px 4%;
+}
+.join h2{
+  margin: 0 0 20px 10px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.join form{
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+.block #kor_id{
+ margin-bottom: 5px; 
+}
+.id_check{
+  color: #ff0000;
+  margin-bottom: 15px;
+}
+.join .btn_box{
+  width: 100%;
+  text-align: center;
+}
+.join .btn_box #join_submit, .join .btn_box #join_cancle{
+  display: inline-block;
+  width: 49%;
+  padding: 12px 0;
+  border: 1px solid #818181;
+  border-radius: 5px;
+}
+.join .btn_box #join_submit{
+  color: #ffffff;
+  background-color: #233177;
+}
+.join .btn_box #join_cancle{
+  line-height: 18px;
+  transform: translateY(1px);
+}
+
+/* 로그인 서식 */
+.login_back{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 140px;
+  border-radius: 0 0 50px 0;
+  background: linear-gradient(90deg, rgba(41,65,181,1) 0%, rgba(23,109,133,1) 100%);
+  z-index: -1;
+}
+.login{
+  width: 100%;
+  padding: 40px 4%;
+}
+.login h2{
+  margin: 0 0 20px 10px;
+  font-size: 20px;
+  color: #ffffff;
+}
+.login form{
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+.login form .title_box{
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cccccc;
+}
+.login form .title_box p{
+  width: 50%;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 4px solid transparent;
+}
+.login form .title_box p.active{
+  border-bottom: 4px solid #2941b5;
+}
+.block label, .block input{
+  display: block;
+  font-size: 16px;
+}
+.block input{
+  width: 100%;
+  height: 30px;
+  border: none;
+  margin: 10px 0 20px;
+  border-bottom: 1px solid #818181;
+}
+#login_btn{
+  width: 100%;
+  margin: 15px 0;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #233177;
+  cursor: pointer;
+}
+.login .link_box{
+  width: 100%;
+  text-align: center;
+}
+.login .link_box a{
+  padding: 0 5px;
+}
+.login .link_box a::after{
+  content: '';
+  padding-right: 10px;
+  border-right: 1px solid #cccccc;
+}
+.login .link_box a:last-child::after{
+  content: '';
+  padding-right: 0;
+  border-right: none;
+}
+.login h3{
+  margin: 20px 0 10px;
+  text-align: center;
+}
+.login .ez_login{
+  width: 100%;
+  text-align: center;
+}
+
+
+

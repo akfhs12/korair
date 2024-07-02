@@ -1,0 +1,182 @@
+@charset "utf-8";
+@import url(common.css);
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: #dbdbdb;
+}
+main{
+  /* background-color: var(--color_main); */
+  position: relative;
+}
+.color_b{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 200px;
+  background-color: var(--color_main);
+  z-index: -1;
+}
+.color_g{
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  height: 100%;
+  background-color: #dbdbdb;
+  z-index: -1;
+}
+
+header{
+  width: 100%;
+  height: 68px;
+  background-color: var(--color_main);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+header h1{
+  width: 230px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.login_btn, .toggle_btn, .close_btn{
+  position: absolute;
+  top: 10px;
+  display: inline-block;
+  width: 48px; height: 48px;
+  background: url('../images/btn_sprite.png');
+  text-indent: -9999px;
+}
+.login_btn{
+  background-position: -48px 0px;
+  right: 10px;
+}
+.toggle_btn{
+  left: 10px;
+}
+.none{
+  display: none;
+}
+/* 탭메뉴 */
+.tab_menu_box{
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+  z-index: 10;
+}
+.tab_menu_box .close_btn{
+  background-position: -96px 0px;
+  right: 10px;
+}
+.tab_menu{
+  width: 70%;
+  height: 100%;
+  padding: 50px 4%;
+  background-color: #ffffff;
+}
+.menu_list_box{
+  font-size: var(--f_size_20);
+  line-height: 2;
+}
+.menu_list_box li{
+  border-bottom: 1px solid #cccccc;
+}
+
+
+/* 메인섹션1. 그리드 */
+
+.main_grid{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: 
+        "grid_1 grid_1 grid_2"
+        "grid_1 grid_1 grid_3"
+        "grid_4 grid_5 grid_6";
+  padding: 5px;
+}
+.main_grid > div{
+  margin: 2px;
+}
+.main_grid div img{
+  width: 100%;
+  height: 100%;
+}
+.grid_1{
+  box-sizing:border-box;
+  padding-right: 4px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  grid-area: grid_1;
+}
+.grid_1 img{
+
+}
+.grid_2{grid-area: grid_2;}
+.grid_3{grid-area: grid_3;}
+.grid_4{grid-area: grid_4;}
+.grid_5{grid-area: grid_5;}
+.grid_6{grid-area: grid_6;}
+
+/* 섹션1. 그리드 스와이퍼 슬라이드 */
+.swiper-slide {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.swiper-slide a{
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination-bullet{
+  width: 15px; height: 15px;
+}
+
+
+
+/* 메인 섹션2. 스카이패스 */
+.main_skypass{
+  margin-left: 10px;
+}
+
+
+
+/* 푸터 */
+footer{
+  padding: 50px 30px 20px 30px;
+  font-size: var(--f_size_12);
+  background-color: #dbdbdb;
+}
+footer nav{
+  text-align: center;
+  margin-bottom: 10px;
+}
+footer nav em{
+  font-style: normal;
+  font-weight: bold;
+}
+footer nav a{
+  padding-left: 10px;
+}
+footer nav a::after{
+  content: '';
+  border-right: 1px solid #ffffff;
+  padding-right: 10px;
+}
+footer nav a:last-child::after{
+  content: '';
+  border: none;
+}
+footer .copyright{
+  margin-bottom: 5px;
+}
+footer dl{
+  display: flex;
+}
+footer dl *{
+  margin-right: 5px;
+}
